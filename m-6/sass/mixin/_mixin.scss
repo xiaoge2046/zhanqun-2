@@ -1,0 +1,14 @@
+@charset "UTF-8";
+$color-light: lighten($color, 10%);
+$color-darker: darken($color, 10%);
+//模板主色-深色渐变
+@mixin gradient-bg($start: $color-light, $end:$color-darker) {
+    background: -webkit-gradient(linear, left top, left bottom, from($start), to($end));
+    background: linear-gradient(to bottom, $start, $end);
+}
+//调用-渐变
+@mixin gradient($normal, $start: $color-light, $end:$color-darker) {
+    background: $normal;
+    background: -webkit-gradient(linear, left top, left bottom, from($start), to($end));
+    background: linear-gradient(to bottom, $start, $end);
+}

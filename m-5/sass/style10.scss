@@ -1,0 +1,8 @@
+@charset "UTF-8";
+//颜色设置
+$color:#1f6ed4;
+// 首页和公用引入
+@import 'mixin/_mixin.scss';
+@import 'include/_rest.scss';
+@import 'include/_index.scss';
+@import 'include/_main.scss';

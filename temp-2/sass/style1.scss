@@ -1,0 +1,9 @@
+@charset "UTF-8";
+//颜色设置
+$color:#c30000;
+//皮肤文件夹路径
+$skin-path: 'skin/1/';
+// 首页和公用引入
+@import 'include/_rest.scss';
+@import 'include/_index.scss';
+@import 'include/_main.scss';

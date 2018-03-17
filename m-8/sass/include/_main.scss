@@ -1,0 +1,408 @@
+@charset "UTF-8";
+//内页开始
+.main {
+    min-height: calc(100vh - 3.57rem);
+}
+
+
+
+/* 内页头部导航  */
+
+.public-top-nav {
+    .item {
+        float: left;
+        width: 25%;
+        border: .01rem solid $color;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        a {
+            display: block;
+            width: 100%;
+            height: .6rem;
+            line-height: .6rem;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #fff;
+            background: darken($color, 5%);
+        }
+        &:nth-child(9),
+        &:nth-child(10),
+        &:nth-child(11) {
+            display: none;
+        }
+    }
+}
+
+
+
+/* 内容区域 */
+
+.public-inner-main {
+    .inner-wrap {
+        padding: .18rem;
+    }
+    .public-quick-start {
+        padding: .1rem 0;
+        background: #fff;
+        margin: -.18rem;
+    }
+}
+
+
+
+/* 页面内导航 */
+
+.m-page-menu {
+    margin: .1rem 0;
+    .item {
+        float: left;
+        width: 1.43rem;
+        margin-right: .1rem;
+        margin-bottom: .1rem;
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+        a {
+            display: block;
+            padding: .15rem 0;
+            text-align: center;
+            border: .02rem solid #a0a0a0;
+            background: #ececec;
+            color: #3e3e3e;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .active {
+        a {
+            background: #979797;
+            color: #fff;
+        }
+    }
+}
+
+
+
+/* 公司介绍组件 */
+
+.m-company-introduction {
+    .company-img {
+        text-align: center;
+        padding: .06rem;
+        border: .02rem solid #d8d8d8;
+        margin: .1rem 0 .2rem;
+    }
+    .intro-wrap {
+        font-size: 13px;
+        text-align: justify;
+        line-height: 1.8;
+        color: #3c3c3c;
+        p {
+            margin-bottom: .2rem;
+        }
+    }
+}
+
+
+
+/* 产品介绍组 */
+
+.m-product-view {
+    padding: .18rem;
+    .pro-title {
+        padding: .25rem 0;
+        font-size: .32rem;
+        text-align: center;
+        color: #040404;
+    }
+    .product-pic {
+        text-align: center;
+        margin-bottom: .15rem;
+    }
+    .product-intro {
+        font-size: 13px;
+        line-height: 1.8;
+        color: #3c3c3c;
+        margin-bottom: .2rem;
+        text-align: justify;
+        .u-more {
+            color: #0b7bca;
+        }
+    }
+}
+
+
+
+/* 长尾词 */
+
+.m-long-tail-wrap {
+    line-height: 1.8;
+    .lw-intro {
+        padding: .2rem;
+    }
+    .lw-con {
+        border-top: .02rem solid #cbcbcb;
+        border-bottom: .02rem solid #cbcbcb;
+    }
+    .lw-menu {
+        padding: .2rem;
+        overflow: hidden;
+        .anchor {
+            display: block;
+            color: $color;
+            font-size: .24rem;
+        }
+        .anchor+.anchor {
+            margin-top: .15rem;
+        }
+    }
+    .lw-anchor-list {
+        padding: .2rem;
+        .para-title {
+            margin-bottom: .2rem;
+            font-weight: 700;
+        }
+        .para-con {
+            color: #8a8a8a;
+            p {
+                margin-bottom: .2rem;
+            }
+        }
+    }
+    .lw-interrelated {
+        padding: .2rem .18rem;
+        .lump {
+            margin-bottom: .2rem;
+            .title {
+                margin-bottom: .08rem;
+            }
+        }
+        .quote {
+            a {
+                display: inline-block;
+                margin-right: .2rem;
+                margin-bottom: .15rem;
+                color: #158aee;
+            }
+        }
+    }
+}
+
+
+
+/* 信息列表 */
+
+.m-information-list {
+    .list-wrap {
+        .items {
+            padding: .2rem 0;
+            border-bottom: .02rem dashed #cbcbcb;
+            a {
+                max-width: 4.5rem;
+                display: inline-block;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    margin: 0 .1rem;
+                    width: 4px;
+                    height: 4px;
+                    background: $color;
+                    vertical-align: middle;
+                }
+                &:hover {
+                    color: $color;
+                }
+            }
+            .date {
+                float: right;
+                vertical-align: middle;
+                color: #999;
+            }
+        }
+    }
+}
+
+
+
+/* 和PC分页同块，结构不变，只调整样式 */
+
+.m-pagination {
+    padding: .25rem 0;
+    .pagination-total {
+        display: none;
+    }
+    .pagination {
+        float: initial !important;
+        text-align: center;
+        li {
+            font-size: 0;
+            display: none;
+        }
+        .u-prev,
+        .u-next {
+            display: inline;
+        }
+        a {
+            display: inline-block;
+            width: 1.04rem;
+            height: .4rem;
+            margin: 0 .13rem;
+            line-height: .4rem;
+            text-align: center;
+            border: .02rem solid #9b9b9b;
+            background: #f3f3f3;
+            color: #0e0e0e;
+            font-size: 13px;
+        }
+    }
+}
+
+
+
+/* 联系 */
+
+.m-contact {
+    padding: .4rem 0;
+    text-align: center;
+}
+
+
+
+/* 微名片 */
+
+.m-mini-cart {
+    background: #ebebeb;
+    .user-intro {
+        height: 3.74rem;
+        text-align: center;
+        @include gradient(#ff9140, #ffba86, #ff6d00);
+        .title {
+            color: #fff;
+            font-size: .28rem;
+            .job {
+                font-size: .22rem;
+                color: rgba(255, 255, 255, .6);
+            }
+        }
+    }
+    .img-wrap {
+        display: inline-block;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        padding: 5px;
+        box-shadow: 0 0 16px rgba(0, 0, 0, .2);
+        background: #fff;
+        margin: .45rem 0 .38rem;
+        .img-shadow {
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 0 18px rgba(0, 0, 0, .2) inset;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .list-item {
+        display: flex;
+        padding: 0 .3rem;
+        height: 1.12rem;
+        border-bottom: .02rem solid #e0e0e0;
+        align-items: center;
+        .control-wrap {
+            display: flex;
+            align-items: center;
+            padding: .02rem;
+        }
+        .con {
+            flex: 1;
+            line-height: 1.6;
+        }
+        .tit {
+            color: #7c7c7c;
+        }
+        .int {
+            color: #333;
+            font-size: .26rem;
+        }
+        .tell-btn,
+        .sms-btn {
+            display: inline-block;
+            width: .6rem;
+            height: .6rem;
+        }
+        .tell-btn {
+            background-position: -.19rem -1.04rem;
+        }
+        .sms-btn {
+            margin-left: .32rem;
+            background-position: -1.17rem -1.04rem;
+        }
+        .icon-wrap {
+            display: inline-block;
+            width: .53rem;
+            height: .53rem;
+            margin-right: .17rem;
+        }
+        .i-email {
+            background-position: -.2rem -4.67rem;
+        }
+        .i-qq {
+            background-position: -1.02rem -4.68rem;
+        }
+        .i-address {
+            background-position: -1.85rem -4.68rem;
+        }
+        .i-sites {
+            background-position: -2.67rem -4.67rem;
+        }
+    }
+}
+
+
+
+/* 微信二维码 */
+
+.m-qr-code {
+    text-align: center;
+    padding: .5rem 0;
+    .qr-box {
+        margin-bottom: .5rem;
+        img {
+            max-width: 4rem;
+        }
+    }
+    .par {
+        line-height: 1.8;
+        color: #434343;
+        font-size: .25rem;
+        b {
+            color: #ff6d00;
+        }
+    }
+}
+
+
+
+/* 微信分享 */
+
+.mod-share {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: .2rem .35rem;
+    background: rgba(0, 0, 0, .7) url(../images/share-msk.png) no-repeat top right / 4.2rem auto;
+    background-origin: content-box;
+    z-index: 999;
+    cursor: pointer;
+}
